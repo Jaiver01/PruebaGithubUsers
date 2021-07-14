@@ -20,7 +20,7 @@ _Clonar el proyecto_
 git clone https://github.com/Jaiver01/PruebaGithubUsers.git
 ```
 
-_Navegador al directorio del proyecto e instalar las dependencias_
+_Navegar al directorio del proyecto e instalar las dependencias_
 
 ```
 cd PruebaGithubUsers
