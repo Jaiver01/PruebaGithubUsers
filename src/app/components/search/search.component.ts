@@ -28,6 +28,9 @@ export class SearchComponent implements OnInit {
 	}
 
 	public search = (): void => {
+		this.users = [];
+		this.chart = false;
+
 		if (this.filter.errors) {
 			this.alert.type = 'danger';
 
@@ -36,9 +39,7 @@ export class SearchComponent implements OnInit {
 			if (this.filter.errors.pattern) this.alert.message = 'Busqueda no válida';
 
 			return;
-		}
-
-		this.chart = false;
+		}		
 
 		this.usersService.getUsers(this.filter.value).subscribe((users: any) => {
 			this.users = users.items;
