@@ -1,0 +1,12 @@
+<div class="search-bar-container d-flex flex-column d-flex flex-column align-items-center">
+    <input type="text" id="search-bar" class="form-control" [formControl]="filter" placeholder="Buscar usuario de Github" autocomplete="off">
+    <button class="btn btn-dark search-btn" (click)="search()">
+        <fa-icon [icon]="icons.faSearch"></fa-icon>
+        <span class="ml-1">Buscar</span>
+    </button>
+</div>
+<div class="users mt-5 mb-5">
+    <app-card-user *ngFor="let user of this.users" [name]="user.login" [id]="user.id" [picture]="user.avatar_url" [score]="user.score"></app-card-user>
+</div>
+<app-chart class="chart" *ngIf="chart" [users]="users"></app-chart>
+<app-alerts *ngIf="alert.message" [alert]="alert"></app-alerts>

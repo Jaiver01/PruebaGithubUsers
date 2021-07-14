@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import './shared/css/_variables';
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('./assets/fonts/CenturyGothic.ttf');
+}
+
+* {   
+    font-family: 'Century Gothic', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

@@ -1,0 +1,13 @@
+.container-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .avatar {
+        width: 150px;
+    }
+    
+    h4 {
+        color: var(--color-bg);
+    }
+}
